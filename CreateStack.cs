@@ -45,6 +45,7 @@
             }
             return top.data;
         }
+
         public bool IsEmpty()
         {
             return top == null;

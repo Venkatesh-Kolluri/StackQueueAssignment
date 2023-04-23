@@ -11,7 +11,6 @@ namespace StackQueue
     {
         public static void Main(string[] args)
         {
-
             Stack stack = new Stack();
             stack.Push(70);
             stack.Push(30);
@@ -20,8 +19,6 @@ namespace StackQueue
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
-
-
         }
     }
 }

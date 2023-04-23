@@ -11,16 +11,17 @@ namespace StackQueue
     {
         public static void Main(string[] args) 
         {
-           
-                CreateQueue queue = new CreateQueue();
+                DequeueStack queue = new DequeueStack();
                 queue.Enqueue(56);
                 queue.Enqueue(30);
                 queue.Enqueue(70);
 
                 Console.WriteLine(queue.Dequeue());
+
+                queue.DequeueFromBeginning();
+
                 Console.WriteLine(queue.Dequeue());
-                Console.WriteLine(queue.Dequeue());
-            
+
         }
     }
 }

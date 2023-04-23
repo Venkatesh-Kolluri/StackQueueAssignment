@@ -9,16 +9,18 @@ namespace StackQueue
 {
     internal class Program
     {
-        public static void Main(string[] args)
+        public static void Main(string[] args) 
         {
-            Stack stack = new Stack();
+            PeekPop stack = new PeekPop();
             stack.Push(70);
             stack.Push(30);
             stack.Push(56);
+            Console.WriteLine(stack.Peek());
 
-            Console.WriteLine(stack.Pop());
-            Console.WriteLine(stack.Pop());
-            Console.WriteLine(stack.Pop());
+            while (!stack.IsEmpty())
+            {
+                Console.WriteLine(stack.Pop());
+            }
         }
     }
 }

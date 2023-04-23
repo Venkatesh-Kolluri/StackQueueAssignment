@@ -11,16 +11,16 @@ namespace StackQueue
     {
         public static void Main(string[] args) 
         {
-            PeekPop stack = new PeekPop();
-            stack.Push(70);
-            stack.Push(30);
-            stack.Push(56);
-            Console.WriteLine(stack.Peek());
+           
+                CreateQueue queue = new CreateQueue();
+                queue.Enqueue(56);
+                queue.Enqueue(30);
+                queue.Enqueue(70);
 
-            while (!stack.IsEmpty())
-            {
-                Console.WriteLine(stack.Pop());
-            }
+                Console.WriteLine(queue.Dequeue());
+                Console.WriteLine(queue.Dequeue());
+                Console.WriteLine(queue.Dequeue());
+            
         }
     }
 }
